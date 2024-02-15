@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konverter Suhu</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Konversi Suhu</title>
 </head>
-<body>
-    <header id="navigation-bar">
-        <h3 id="logo">Put Logo</h3>
-        <nav id="navigation">
-            <a href="">Lihat Hasil</a>
-            <a href="">Lihat Rumus</a>
-        </nav>
-    </header>
-    <div class="input-section">
-        <label for="input-field">Celcius</label>
-        <input type="number" class="input-field">
+
+<header>
+    <div class="jumbotron">
+        <h1>Konversi Suhu</h1>
+        <p>Muhammad Najwan Fadlillah</p>
+        <p>RevoU Mini Project</p>
     </div>
-    <button class="my-button">Konversi</button>
+</header>
+
+<body>
+    <label for="nilai_awal" style="display: block;">Celcius (&#8451):</label>
+    <input type="number" name="nilai_awal" id="nilai_awal"></input>
+    <label for="nillai_akhir" style="display: block;">Fahrenheit (&#8457):</label>
+    <input type="text" name="nillai_akhir" id="nillai_akhir" readonly></input>
+    <div class="btn-box">
+        <button onclick="calculate()">Konversi</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="tukar">Reverse</button>
+    </div>
+    <label for="rumus" style="display: block;">Jalan Pengkonversian:</label>
+    <input type="text" name="rumus" id="rumus" readonly></input>
+    <footer>
+        <br>
+        <strong>Rumus konversu suhu dari Celcius (&#8451) Ke Fahrenheit (&#8457): </strong>
+        <p><i><strong>S</strong></i><sub>(&#8457)</sub> = (<i><strong>S</strong></i> <sub>(&#8451)</sub> x 9/5) + 32</p>
+        <br>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
